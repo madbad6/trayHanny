@@ -1,0 +1,6 @@
+telethon==1.28.5
+torch==2.0.1
+transformers==4.31.0
+datasets==2.13.1
+accelerate==0.21.0
+python-dotenv==1.0.0

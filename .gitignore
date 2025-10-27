@@ -1,0 +1,72 @@
+# Идея проекта (JetBrains IDE)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Модели машинного обучения
+my_trained_model/
+*.pkl
+*.joblib
+*.model
+*.h5
+*.hdf5
+
+# Сессии телеграм бота
+sessions/
+*.session
+
+# Данные обучения
+training_data/
+training_data.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+
+# Docker
+docker-compose.override.yml
+
+# Логи
+*.log
+logs/
+
+# Операционные системы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Временные файлы
+*.tmp
+*.temp

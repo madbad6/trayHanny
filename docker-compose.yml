@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-bot
+    restart: unless-stopped
+    volumes:
+      - ./sessions:/app/sessions
+      - ./my_trained_model:/app/my_trained_model
+      - ./training_data:/app/training_data
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["run"]  # по умолчанию запускаем бота
+
+  bot-trainer:
+    build: .
+    container_name: bot-trainer
+    restart: on-failure
+    volumes:
+      - ./sessions:/app/sessions
+      - ./my_trained_model:/app/my_trained_model
+      - ./training_data:/app/training_data
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["train"]
+    profiles:
+      - train
